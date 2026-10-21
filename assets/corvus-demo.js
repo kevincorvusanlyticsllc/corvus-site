@@ -323,9 +323,11 @@
     tiers.forEach((el) => el.classList.toggle("on", names.includes(el.dataset.tier)));
   }
 
+  // the raven goes in front of "Corvus wrote", as in the real window
   function label(head, note) {
-    viewLbl.firstChild.textContent = `${head} `;
-    viewLbl.querySelector("span").textContent = note;
+    viewLbl.querySelector(".h").textContent = head;
+    viewLbl.querySelector(".n").textContent = note;
+    viewLbl.querySelector(".dx-mark").hidden = head !== "Corvus wrote";
   }
 
   function showChart() {

@@ -641,11 +641,47 @@ p.note {
   background: #0e1720;
 }
 
+/* the raven, sized as in the real window: 34 px in the title bar, 18 by the orb's name, 15 on a label */
+.dx-mark {
+  display: block;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  filter: drop-shadow(0 0 7px rgb(123 108 255 / 0.38));
+}
+
+.dx-mark.sm {
+  width: 18px;
+  height: 18px;
+  filter: drop-shadow(0 0 4px rgb(123 108 255 / 0.35));
+}
+
+.dx-mark.xs {
+  width: 15px;
+  height: 15px;
+  align-self: center;
+  filter: none;
+}
+
+.dx-mark[hidden] {
+  display: none;
+}
+
 .dx-brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
   color: #fff;
   font: 700 17px/1 var(--dx-display);
   font-stretch: condensed;
   letter-spacing: 0.06em;
+}
+
+.dx-brand small {
+  color: var(--dx-dim);
+  font: 500 10px/1 var(--mono);
+  font-stretch: normal;
+  letter-spacing: 0.14em;
 }
 
 .dx-pill {
@@ -761,12 +797,15 @@ p.note {
   left: 12px;
   right: 12px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
   pointer-events: none;
 }
 
 .dx-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   color: #fff;
   font: 700 14px/1 var(--dx-display);
   font-stretch: condensed;

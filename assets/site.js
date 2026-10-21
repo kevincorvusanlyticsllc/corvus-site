@@ -44,7 +44,7 @@
     footer.className = "site-footer";
     footer.innerHTML =
       '<div class="wrap footer-inner">' +
-      `<p>&copy; ${new Date().getFullYear()} Corvus Analytics LLC &middot; Dallas, Texas</p>` +
+      `<p>&copy; ${new Date().getFullYear()} Corvus Analytics LLC</p>` +
       `<p><a href="mailto:${EMAIL}">${EMAIL}</a></p>` +
       '<p class="fine">The Corvus raven logo is a trademark of Corvus Analytics LLC. Corvus Analytics LLC is not a registered investment adviser or broker-dealer. Nothing on this site is investment advice, or an offer to sell or a solicitation of an offer to buy any security or any interest in any fund.</p>' +
       "</div>";
