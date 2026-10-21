@@ -1,0 +1,18 @@
+# Corvus Analytics
+
+> Corvus Analytics LLC builds AI software for the financial markets and trades on it: desk-grade tools for independent traders and small funds, and a private proprietary trading fund that uses them. Its flagship, Corvus, is a voice-first AI assistant for the trading desk.
+
+## Corvus
+
+- [Corvus](https://corvusanalyticsllc.com/corvus/): a voice-first AI assistant for the trading desk. It listens to plain speech; reads positions, quotes, option chains, factor exposures and the market regime from live data, with the news read against the book; answers out loud in seconds; draws trend lines and levels on charts; and writes longer reads on screen. It matches each job to an external AI model (fast, core, expert) and keeps learning: confirmed phrasings, new skills and the day's context carry forward. Order tickets are read back and checked against size and risk caps; a dry-run mode routes nothing.
+- Who it is for: independent traders and small funds. Corvus is in private use on Corvus Analytics' own desk today, and the company is taking on software work.
+
+## Company
+
+- [Home](https://corvusanalyticsllc.com/): what Corvus Analytics does, an interactive preview of Corvus, and short answers to common questions.
+- Contact: kevin@corvusanalyticsllc.com
+
+## Notes
+
+- The trading fund is private and closed to outside investors. Corvus Analytics does not provide investment advice or manage money for clients, and is not a registered investment adviser or broker-dealer.
+- The Corvus raven logo is a trademark of Corvus Analytics LLC.

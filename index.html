@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'self'; form-action 'none'; object-src 'none'">
-  <title>Corvus Analytics LLC</title>
-  <meta name="description" content="Corvus Analytics builds AI trading software for independent traders and small funds, and runs a private proprietary trading fund.">
+  <title>Corvus Analytics · AI software for the financial markets</title>
+  <meta name="description" content="Corvus Analytics builds AI software for the financial markets and trades on it. Its flagship, Corvus, is a voice-first AI assistant for the trading desk, built for independent traders and small funds.">
   <link rel="canonical" href="https://corvusanalyticsllc.com/">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b0c10">
@@ -21,22 +21,55 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/site.css?v=20261021b">
-  <script src="/assets/site.js?v=20261021b" defer></script>
-  <script src="/assets/corvus-demo.js?v=20261021b" defer></script>
+  <link rel="stylesheet" href="/assets/site.css?v=20261021c">
+  <script src="/assets/corvus-demo.js?v=20261021c" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Corvus Analytics LLC",
-    "url": "https://corvusanalyticsllc.com/",
-    "email": "kevin@corvusanalyticsllc.com"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://corvusanalyticsllc.com/#org",
+        "name": "Corvus Analytics",
+        "legalName": "Corvus Analytics LLC",
+        "url": "https://corvusanalyticsllc.com/",
+        "logo": "https://corvusanalyticsllc.com/assets/logo.png",
+        "email": "kevin@corvusanalyticsllc.com",
+        "description": "Corvus Analytics LLC builds AI software for the financial markets and trades on it: desk-grade tools for independent traders and small funds, and a private proprietary trading fund that uses them.",
+        "knowsAbout": ["AI trading software", "Voice assistants for trading", "Factor models", "Market regime analysis"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://corvusanalyticsllc.com/#site",
+        "name": "Corvus Analytics",
+        "url": "https://corvusanalyticsllc.com/",
+        "publisher": { "@id": "https://corvusanalyticsllc.com/#org" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is Corvus Analytics?", "acceptedAnswer": { "@type": "Answer", "text": "Corvus Analytics LLC builds AI software for the financial markets and trades on it. Its software is built for independent traders and small funds, and it runs a private proprietary trading fund that uses the same tools." } },
+          { "@type": "Question", "name": "What is Corvus?", "acceptedAnswer": { "@type": "Answer", "text": "Corvus is a voice-first AI assistant for the trading desk. Traders talk to it in plain speech; it reads positions, quotes, option chains, factor exposures and the market regime from live data, answers out loud in seconds, draws on charts, and writes longer reads on screen." } },
+          { "@type": "Question", "name": "How does Corvus use AI models?", "acceptedAnswer": { "@type": "Answer", "text": "Corvus matches each job to an external AI model: a fast model reads new phrasings and keeps its notes, a core model runs the conversation and its tools, and a larger expert model takes hard questions and nightly training. It keeps learning on the job: phrasings the trader confirms, new skills and the day's context carry forward." } },
+          { "@type": "Question", "name": "Who is Corvus for?", "acceptedAnswer": { "@type": "Answer", "text": "Independent traders and small funds that want desk-grade tools without building them. Corvus runs every day on Corvus Analytics' own trading desk." } },
+          { "@type": "Question", "name": "Is Corvus available?", "acceptedAnswer": { "@type": "Answer", "text": "Corvus is in private use today. Corvus Analytics is taking on software work with independent traders and small funds; to talk about it, email kevin@corvusanalyticsllc.com." } },
+          { "@type": "Question", "name": "Does Corvus Analytics manage outside money or give investment advice?", "acceptedAnswer": { "@type": "Answer", "text": "No. Its trading fund is private and closed to outside investors, and it does not provide investment advice or manage money for clients. Corvus Analytics LLC is not a registered investment adviser or broker-dealer." } }
+        ]
+      }
+    ]
   }
   </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header data-site="header"></header>
+  <!-- site:header -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-current="page"><span class="brand-mark"><img src="/assets/corvus-icon.svg" width="36" height="36" alt=""><span class="tm" aria-hidden="true">&trade;</span></span><span>Corvus Analytics</span></a>
+      <nav class="nav" aria-label="Primary"><ul><li><a href="/corvus/">Corvus</a></li></ul></nav>
+    </div>
+  </header>
+  <!-- /site:header -->
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
@@ -88,7 +121,7 @@
       </div>
     </section>
 
-    <section class="corvus" aria-labelledby="corvus-title">
+    <section class="corvus" id="corvus" aria-labelledby="corvus-title">
       <div class="wrap">
         <div class="section-intro">
           <div>
@@ -243,6 +276,44 @@
             <p>New requests become skills, learned after the close. Confirmed phrasings, new skills and the day&rsquo;s context stick, and harder questions go to larger external models.</p>
           </li>
         </ul>
+        <p class="more"><a href="/corvus/">More about Corvus &rarr;</a></p>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-intro">
+          <div>
+            <p class="eyebrow">Questions</p>
+            <h2 id="faq-title">The short answers.</h2>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>What is Corvus Analytics?</summary>
+            <p>Corvus Analytics LLC builds AI software for the financial markets and trades on it. Its software is built for independent traders and small funds, and it runs a private proprietary trading fund that uses the same tools.</p>
+          </details>
+          <details>
+            <summary>What is Corvus?</summary>
+            <p>Corvus is a voice-first AI assistant for the trading desk. Traders talk to it in plain speech; it reads positions, quotes, option chains, factor exposures and the market regime from live data, answers out loud in seconds, draws on charts, and writes longer reads on screen.</p>
+          </details>
+          <details>
+            <summary>How does Corvus use AI models?</summary>
+            <p>Corvus matches each job to an external AI model: a fast model reads new phrasings and keeps its notes, a core model runs the conversation and its tools, and a larger expert model takes hard questions and nightly training. It keeps learning on the job: phrasings the trader confirms, new skills and the day&rsquo;s context carry forward.</p>
+          </details>
+          <details>
+            <summary>Who is Corvus for?</summary>
+            <p>Independent traders and small funds that want desk-grade tools without building them. Corvus runs every day on Corvus Analytics&rsquo; own trading desk.</p>
+          </details>
+          <details>
+            <summary>Is Corvus available?</summary>
+            <p>Corvus is in private use today. Corvus Analytics is taking on software work with independent traders and small funds; to talk about it, email <a href="mailto:kevin@corvusanalyticsllc.com">kevin@corvusanalyticsllc.com</a>.</p>
+          </details>
+          <details>
+            <summary>Does Corvus Analytics manage outside money or give investment advice?</summary>
+            <p>No. Its trading fund is private and closed to outside investors, and it does not provide investment advice or manage money for clients. Corvus Analytics LLC is not a registered investment adviser or broker-dealer.</p>
+          </details>
+        </div>
       </div>
     </section>
 
@@ -297,6 +368,14 @@
     </section>
   </main>
 
-  <footer data-site="footer"></footer>
+  <!-- site:footer -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 Corvus Analytics LLC</p>
+      <p><a href="mailto:kevin@corvusanalyticsllc.com">kevin@corvusanalyticsllc.com</a></p>
+      <p class="fine">The Corvus raven logo is a trademark of Corvus Analytics LLC. Corvus Analytics LLC is not a registered investment adviser or broker-dealer. Nothing on this site is investment advice, or an offer to sell or a solicitation of an offer to buy any security or any interest in any fund.</p>
+    </div>
+  </footer>
+  <!-- /site:footer -->
 </body>
 </html>
