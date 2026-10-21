@@ -16,7 +16,9 @@
 
   const EMAIL = "kevin@corvusanalyticsllc.com";
 
-  const RAVEN = '<img src="/assets/corvus-icon.svg" width="36" height="36" alt="">';
+  const RAVEN =
+    '<span class="brand-mark"><img src="/assets/corvus-icon.svg" width="36" height="36" alt="">' +
+    '<span class="tm" aria-hidden="true">&trade;</span></span>';
 
   // "/", "/index.html", "/about" and "/about.html" all name a page the same way.
   const page = (path) => path.replace(/\.html$/, "").replace(/\/index$/, "/");
@@ -44,7 +46,7 @@
       '<div class="wrap footer-inner">' +
       `<p>&copy; ${new Date().getFullYear()} Corvus Analytics LLC &middot; Dallas, Texas</p>` +
       `<p><a href="mailto:${EMAIL}">${EMAIL}</a></p>` +
-      '<p class="fine">Corvus Analytics LLC is not a registered investment adviser or broker-dealer. Nothing on this site is investment advice, or an offer to sell or a solicitation of an offer to buy any security or any interest in any fund.</p>' +
+      '<p class="fine">The Corvus raven logo is a trademark of Corvus Analytics LLC. Corvus Analytics LLC is not a registered investment adviser or broker-dealer. Nothing on this site is investment advice, or an offer to sell or a solicitation of an offer to buy any security or any interest in any fund.</p>' +
       "</div>";
   }
 })();

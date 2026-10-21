@@ -166,6 +166,21 @@ a:hover {
   height: 2.25rem;
 }
 
+.brand-mark {
+  position: relative;
+  display: inline-flex;
+}
+
+.brand-mark .tm {
+  position: absolute;
+  top: -0.15rem;
+  right: -0.6rem;
+  color: var(--muted);
+  font-size: 0.6rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
 .nav ul {
   display: flex;
   gap: 1.25rem;

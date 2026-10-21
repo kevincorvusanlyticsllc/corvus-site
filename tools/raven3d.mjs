@@ -145,7 +145,8 @@ const shade = (gain) => tris.map((t) => {
 const [ex, ey] = EYE, [tx, ty] = THIRD;
 const almond = (cx, cy, h, w) => `M${cx} ${cy - h}C${cx + w} ${cy - h * 0.45} ${cx + w} ${cy + h * 0.45} ${cx} ${cy + h}C${cx - w} ${cy + h * 0.45} ${cx - w} ${cy - h * 0.45} ${cx} ${cy - h}Z`;
 
-function svg({ viewBox, halo, fade, title, gain = 1, edge = 1, tile = false }) {
+// tm puts the trademark symbol at the logo's upper right (the hero size only; too small to read elsewhere)
+function svg({ viewBox, halo, fade, title, gain = 1, edge = 1, tile = false, tm = false }) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" role="img" aria-label="${title}">
 <title>${title}</title>
 <defs>
@@ -173,11 +174,12 @@ ${shade(gain).join("\n")}
 <path d="${almond(tx, ty, 7.2, 4.6)}" fill="url(#iris)" stroke="#d9fbff" stroke-width=".6"/>
 <ellipse cx="${tx}" cy="${ty}" rx="1.1" ry="3.9" fill="#07081a"/>
 <circle cx="${tx - 1.2}" cy="${ty - 2.6}" r=".8" fill="#fff"/>
+${tm ? `<text x="197" y="52" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14" font-weight="600" fill="#a3a6b4">™</text>` : ""}
 </svg>
 `;
 }
 
-fs.writeFileSync(`${OUT}/corvus-mark.svg`, svg({ viewBox: "0 0 200 200", halo: true, fade: true, title: "Corvus Analytics" }));
+fs.writeFileSync(`${OUT}/corvus-mark.svg`, svg({ viewBox: "0 0 200 200", halo: true, fade: true, title: "Corvus Analytics", tm: true }));
 fs.writeFileSync(`${OUT}/corvus-icon.svg`, svg({ viewBox: "54 30 142 142", halo: false, fade: true, title: "Corvus Analytics", gain: 1.9, edge: 3 }));
 fs.writeFileSync(`${OUT}/favicon.svg`, svg({ viewBox: "54 30 142 142", halo: false, fade: true, title: "Corvus Analytics", gain: 2.2, edge: 4, tile: true }));
 console.log(`points ${pts.length}, faces ${tris.length}`);
