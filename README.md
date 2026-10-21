@@ -47,3 +47,13 @@ to `NAV` in `assets/site.js`.
 ## Publish
 
 Push to `main`. GitHub Pages rebuilds in a minute or so.
+
+GitHub Pages lets browsers cache CSS and JS for 10 minutes, so a new page can meet an old
+stylesheet. The pages load `site.css`, `site.js` and `corvus-demo.js` with a `?v=` stamp: when you
+change any of them, bump the stamp in all four HTML files, e.g.
+
+```bash
+sed -i -E 's#(/assets/(site\.css|site\.js|corvus-demo\.js))\?v=[^"]*"#\1?v=NEWSTAMP"#g' *.html
+```
+
+Images that matter for layout also carry `width` and `height`, so they stay their size either way.

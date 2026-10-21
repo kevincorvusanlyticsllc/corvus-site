@@ -641,30 +641,13 @@ p.note {
   background: #0e1720;
 }
 
-/* the raven, sized as in the real window: 34 px in the title bar, 18 by the orb's name, 15 on a label */
+/* the raven, top left of the title bar only (the img carries its size too, so a stale stylesheet can't blow it up) */
 .dx-mark {
   display: block;
   flex: none;
-  width: 34px;
-  height: 34px;
-  filter: drop-shadow(0 0 7px rgb(123 108 255 / 0.38));
-}
-
-.dx-mark.sm {
-  width: 18px;
-  height: 18px;
-  filter: drop-shadow(0 0 4px rgb(123 108 255 / 0.35));
-}
-
-.dx-mark.xs {
-  width: 15px;
-  height: 15px;
-  align-self: center;
-  filter: none;
-}
-
-.dx-mark[hidden] {
-  display: none;
+  width: 24px;
+  height: 24px;
+  filter: drop-shadow(0 0 5px rgb(123 108 255 / 0.35));
 }
 
 .dx-brand {
@@ -803,9 +786,6 @@ p.note {
 }
 
 .dx-name {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
   color: #fff;
   font: 700 14px/1 var(--dx-display);
   font-stretch: condensed;
